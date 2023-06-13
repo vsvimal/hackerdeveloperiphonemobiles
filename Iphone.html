@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone Series</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<style>
+.heading{
+  text-align: end;
+}
+
+
+
+
+</style>
+  </head>
+<body>
+    <html lang="en" data-bs-theme="dark"><head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.112.5">
+        <title>Blog Template · Bootstrap v5.3</title>
+    
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
+    
+        
+    
+        
+    
+    <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+        <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+    
+    
+        <style>
+          .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+          }
+    
+          @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+            }
+          }
+    
+          .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+          }
+    
+          .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+          }
+    
+          .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+          }
+    
+          .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+          }
+    
+          .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+          }
+    
+          .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+          }
+          .bd-mode-toggle {
+            z-index: 1500;
+          }
+        </style>
+    
+        
+        <!-- Custom styles for this template -->
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="blog.css" rel="stylesheet">
+      </head>
+      <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+          <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+          </symbol>
+          <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+          </symbol>
+          <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+          </symbol>
+          <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+          </symbol>
+        </svg>
+    
+        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+          <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (dark)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                Light
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark" aria-pressed="true">
+                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                Dark
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                Auto
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+    
+        
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
+      </symbol>
+      <symbol id="cart" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+      </symbol>
+      <symbol id="chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+      </symbol>
+    </svg>
+    
+    <div class="container">
+      <header class="border-bottom lh-1 py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1">
+            <a class="link-secondary" href="www.youtube.com">Subscribe</a>
+          </div>
+          <div class="col-4 text-center">
+            <a class="blog-header-logo text-body-emphasis text-decoration-none" href="#">Hacker Developer</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="link-secondary" href="#" aria-label="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+            </a>
+            <a class="btn btn-sm btn-outline-secondary" href="../login.html">Sign In</a>
+          </div>
+        </div>
+      </header>
+    <div class="heading">
+      <div class="nav-scroller py-1 mb-3 border-bottom">
+        <nav class="nav nav-underline justify-content-between">
+          <a class="nav-item nav-link link-body-emphasis active" href="#">Iphone's World</a>
+          <a class="nav-item nav-link link-body-emphasis" href="../Bootstrap.html/Iphone.html">Home</a>
+          <a class="nav-item nav-link link-body-emphasis" href="../Bootstrap.html/iphonelist.html"> Recently Lanuched</a>
+          <a class="nav-item nav-link link-body-emphasis" href="../Bootstrap.html/team.html">Our Team</a>
+          <a class="nav-item nav-link link-body-emphasis" href="../shinchan.html/vimalcontact.html">About</a>
+
+         
+
+        </nav>
+      
+      
+    </div>
+    </div>
+    </div>
+    <main class="container">
+      <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+        <div class="col-lg-6 px-0">
+          <h1 class="display-4 fst-italic">Apple Made Your Life Easier</h1>
+          <p class="lead my-3">The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface. The iPhone runs the iOS operating system, and in 2021 when the iPhone 13 was introduced, it offered up to 1 TB of storage and a 12-megapixel camera.The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular phone into one device with a touchscreen interface. The iPhone runs the iOS operating system, and in 2021 when the iPhone 13 was introduced, it offered up to 1 TB of storage and a 12-megapixel camera.</p>
+          <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+        </div>
+      </div>
+    
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">CEO Of apple</strong>
+              <h3 class="mb-0">Steve Jobs</h3>
+              <div class="mb-1 text-body-secondary"> (February 24, 1955 – October 5, 2011)</div>
+              <p class="card-text mb-auto">Steven Paul Jobs was an American business magnate, inventor, and investor. He was the co-founder, chairman, and CEO of Apple; the chairman and majority shareholder of Pixar; a member of The Walt Disney Company's board of directors following its acquisition of Pixar; and the founder, chairman, and CEO of NeXT</p>
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continue reading
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+           <img src="../../../images1/steve jobs.jpg" width="100%" height="100%">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success-emphasis">Vice CEO Of Apple</strong>
+              <h3 class="mb-0">Stephen Gary Wozniak</h3>
+              <div class="mb-1 text-body-secondary">(August 11, 1950)</div>
+              <p class="mb-auto">Steve Wozniak, byname of Stephen Gary Wozniak San Jose, California, U.S.), American electronics engineer, cofounder, ....</p>
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continue reading
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+            <img src="../../../images1/steve gary.jpg" width="100%" height="100%">
+          </div>
+        </div>
+      </div>
+    
+      <div class="row g-5">
+        <div class="col-md-8">
+          <h3 class="pb-4 mb-4 fst-italic border-bottom">
+            
+          </h3>
+    
+          <article class="blog-post">
+            <h2 class="display-5 link-body-emphasis mb-1">When Apple Started</h2>
+            <p class="blog-post-meta">1 April 1976 by <a href="wwwLos Altos, California, United States.">Los Altos, California, United StatesLos Altos, California, United States</a></p>
+    
+            <p>Apple Computer, Inc. was founded on April 1, 1976, by college dropouts Steve Jobs and Steve Wozniak, who brought to the new company a vision of changing the way people viewed computers. Jobs and Wozniak wanted to make computers small enough for people to have them in their homes or offices.</p>
+            <hr>
+            <p>Founders Steve Jobs, Steve Wozniak, and Ronald Wayne created Apple Computer Co. on April 1, 1976, to market Wozniak's Apple I desktop computer, and Jobs and ...</p>
+            <h2> Founding and incorporation</h2>
+            <p>How Apple Started...???</p>
+            <blockquote class="blockquote">
+              <p>Industry Of Apple</p>
+            </blockquote>
+            <p>Apple Inc. is an American multinational technology company headquartered in Cupertino, California. Apple is the world's largest technology company by revenue, with US$394.3 billion in 2022 revenue.[6] As of March 2023, Apple is the world's biggest company by market capitalization.[7] As of June 2022, Apple is the fourth-largest personal computer vendor by unit sales and the second-largest mobile phone manufacturer in the world. It is one of the Big Five American information technology companies, alongside Alphabet, Amazon, Meta Platforms, and Microsoft.</p>
+            <h3>Success with Macintosh</h3>
+            <p>A critical moment in the company's history came in December 1979 when Jobs and several Apple employees, including human–computer interface expert Jef Raskin, visited Xerox PARC in to see a demonstration of the Xerox Alto, a computer using a graphical user interface. Xerox granted Apple engineers three days of access to the PARC facilities in return for the option to buy 100,000[31] shares (22.4 million split-adjusted shares as of September 3, 2022)[20] of Apple at the pre-IPO price of $10 a share</p>
+            <ul>
+              <li> US$99.80 billion (2022)</li>
+              <li>US$352.76 billion (2022)</li>
+              <li>US$50.67 billion (2022)</li>
+            </ul>
+            <p>Space Area:-</p>
+            <ol>
+              <li>1 Apple Park Way, Cupertino, California, U.S.</li>
+              <li>Number of employees : 164,000 (2022)</li> 
+              <li>Area served : Worldwide</li>
+            </ol>
+            <p> Success with mobile devices</p>
+            <dl>
+              <dt>Google</dt>
+              <dd>Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.
+                People also ask</dd>
+              <dt>Amazon</dt>
+              <dd>Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.
+                People also ask</dd>
+              <dt>Microsoft</dt>
+              <dd>Explore Microsoft products and services for your home or business. Shop Surface, Microsoft 365, Xbox, Windows, Azure and more.</dd>
+           <hr>
+            <h2>Advantages Of Iphone</h2>
+            <p>1. Large Screen · 2. Ease of use · 3. Secure and Great App Store · 4. Multifunctional Camera · 5. Taking calls with the touch screen.
+            </p>
+            <h3>Disadvantages Of Iphone</h3>
+            <p>1. iPhones are expensive · 2. Few free apps and games in Apple store · 3. Radio is not in-built · 4. iPhone apps are usually big, consuming too ...
+            </p>
+            <pre><code>ios better than android</code></pre>
+            <p> iOS is generally faster and smoother · iOS is super simple to use · Timely updates · The Apple ecosystem · Security (for now) · Apple CarPlay.</p>
+          </article>
+    
+          
+            <h3>Mobile Series</h3>
+            <p>Don't misuse to brand</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Mobile Name</th>
+                  <th>Storage</th>
+                  <th>Prices</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Iphone 14</td>
+                  <td>64 GB</td>
+                  <td>78,999</td>
+                </tr>
+                <tr>
+                  <td>Iphone 14Pro</td>
+                  <td>128 GB</td>
+                  <td>1,19,999</td>
+                </tr>
+                <tr>
+                  <td>Iphone 14Pro Max</td>
+                  <td>512 GB</td>
+                  <td>1,27,999</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Iphone 13Pro Max</td>
+                  <td>128 GB</td>
+                  <td>82,999</td>
+                </tr>
+              </tfoot>
+            </table>
+    
+            <p>Powerful. Beautiful. Durable. 5G connectivity. Check out the new iPhone 14 Pro, iPhone 14 Pro Max, iPhone 14, iPhone 14 Plus and iPhone SE.</p>
+          </article>
+    
+          <article class="blog-post">
+            <h2 class="display-5 link-body-emphasis mb-1">New feature</h2>
+    
+            <p>Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore accessories, entertainment and expert ...</p>
+            <ul>
+              <li>First class Mobiles</li>
+              <li>Long Term Using Mobiles</li>
+              <li>Warrenty Mobiles</li>
+            </ul>
+          </article>
+    
+          <nav class="blog-pagination" aria-label="Pagination">
+            <a class="btn btn-outline-primary rounded-pill" href="#">Info</a>
+            <a class="btn btn-outline-secondary rounded-pill">About</a>
+          </nav>
+    
+        </div>
+    
+        <div class="col-md-4">
+          <div class="position-sticky" style="top: 2rem;">
+            <div class="p-4 mb-3 bg-body-tertiary rounded">
+              <h4 class="fst-italic">About</h4>
+              <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+            </div>
+    
+            <div>
+              <h4 class="fst-italic">Recent Lanuches</h4>
+              <ul class="list-unstyled">
+                <li>
+                  
+                        <img src="../../../images1/iphone4.jpg" width="100%" height="100%">
+                      <h6 class="mb-0">Iphones 14Pro Max</h6>
+                      <small class="text-body-secondary">7th Sep 2022</small>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                    <img src="../../../images1/iphone5.jpg" width="100%" height="100%">
+                      <h6 class="mb-0">Iphone 13Pro Max</h6>
+                      <small class="text-body-secondary">14th sep 2021</small>
+                    </div>
+                  </a>
+                </li>
+                
+               
+              </ul>
+            </div>
+    
+            <div class="p-4">
+              <h4 class="fst-italic">Archives</h4>
+              <ol class="list-unstyled mb-0">
+                <li><a href="www.iphones.com">iphones</a></li>
+                <li><a href="www.ipads.com">ipads</a></li>
+                <li><a href="www.ipod touch.com">ipod touch</a></li>
+                <li><a href="www.macbook.com">MacBook</a></li>
+                <li><a href="www.imac.com">iMac</a></li>
+               
+              </ol>
+            </div>
+    
+            <div class="p-4">
+              <h4 class="fst-italic">Chat me</h4>
+              <ol class="list-unstyled">
+                <li><a href="https://facebook.com>apple">Facebook</a></li>
+                <li><a href="https://twitter.com>apple">Twitter</a></li>
+                <li><a href="https://instagram.com>apple">Instagram</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </main>
+    
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+      <p>Designed  <a href="#"></a> by <a href="../shinchan.html/vimalcontact.html">HACKER DEVELOPER VIMAL</a>.</p>
+      <p class="mb-0">
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWoPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+        
+    
+    </body></html>
+
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
